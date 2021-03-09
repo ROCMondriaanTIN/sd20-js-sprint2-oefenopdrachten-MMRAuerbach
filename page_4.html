@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sprint 2 oefenopdrachten</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Veranderen van style</h1>
+        <p class="normal-text">
+            Je hebt al weer een hoop nieuwe dingen geleerd, belangrijk is om te blijven herhalen, dit zal ook in de sprint
+            eindopdrachten terugkomen. Oefenen ook zelf, maak je Portfolio ook leuker met Javascript!
+        </p>
+        <p class="normal-text">
+            We gaan nu de style van een element veranderen van elementen die je geselecteerd hebt.
+        </p>
+    </header>
+    <main>
+        <section class="first-section">
+            <h2>Veranderen/ toevoegen van style via het style-attribute</h2>
+            <p class="normal-text">
+                Zoals je hebt kunnen lezen kan je de style van een enkel element makkelijk veranderen.
+                <pre>
+                    <code>
+                        let myElement = document.querySelector('.first-section');
+                        if (myElement) { //altijd controleren of je variabele niet leeg is
+                            myElement.style.backgroundColor = "red";
+                        }
+                    </code>
+                </pre>
+            </p>
+            <h2>Het veranderen van een class-name in een element</h2>
+            <p class="normal-text">
+                Een betere/ voorkeurs oplossing is om een style aan te passen via een class-name.
+                Onderstaande code voegt de class-name bg_red toe aan het class="" van het gekozen element.
+                <pre>
+                    <code>
+                        let myElement = document.querySelector('.first-section');
+                        if (myElement) { //altijd controleren of je variabele niet leeg is
+                            myElement.classlist.add('bg_red');
+                        }
+                    </code>
+                </pre>
+            </p>
+        </section>
+        <section class="second-section">
+            <h3>Opdracht 1</h3>
+            <p class="normal-text">
+                <ol>
+                    <li>
+                        Maak een variabele die aangeeft wat een achtergrond kleur kan zijn. (bg-green)<br >
+                        Zet de class ook in de CSS file <code>main.css</code> met een correcte waarde
+                    </li>
+                    <li>
+                        Maak ook een variabele die aangeeft wat een font kleur kan zijn.<br >
+                        Zet de class ook in de CSS file <code>main.css</code> met een correcte waarde
+                    </li>
+                </ol>
+            </p>
+            <h3>Opdracht 2</h3>
+            <p class="normal-text">
+                Zoek het element first-section, en verander de achtergrond kleur naar de waarde van de in 
+                opdracht 1 opgegeven class-name.  
+            </p> 
+            <h3>Opdracht 3</h3>
+            <p class="normal-text">
+                Zoek alle elementen met de class-name normal-text. Verander van alle elementen de font-kleur, 
+                naar de kleur van de in opdracht 1 gegeven class-name.
+            </p> 
+        </section>
+        <footer class="footer" id="final">
+            <section>
+                <a href="page_3.html">&lt; Vorige opdracht</a> 
+                ||
+                <a href="page_5.html">Volgende opdracht &gt;</a>
+            </section>
+        </footer>   
+    </main>
+    <!-- Hieronder wordt het Javascript bestand ingeladen. Dit doe je bij voorkeur altijd aan het einde van je pagina -->
+    <script src="js/page_4.js"></script>
+</body>
+</html>

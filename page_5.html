@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sprint 2 oefenopdrachten</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Showtime!</h1>
+        <p class="normal-text">
+            Nu is het jouw beurt!
+        </p>
+    </header>
+    <main>
+        <section class="first-section">
+            <h2>Eerste browser event</h2>
+            <p class="normal-text">
+                In hoofdstuk 2.1 (van part 2) heb je kunnen lezen over events in de browser (browser events). In het
+                voorbeeld heb je gelezen dat je een bepaalde handeling/ evenement kan afvangen in de browser.
+                In het eerste voorbeeld zie je dat dit met een HTML-attribute onclick gebeurd.
+            </p>
+            <p class="normal-text">
+                Net als het werken met ID's niet meer van deze tijd is, zijn onclicks eigenlijk ook niet meer van deze tijd.
+                Later in de lessen serie gaan we in hoe we dit beter kunnen doen. In plaats daarvan werken we met de 
+                <code>addEventListener</code> en class-names. Hoe je elementen kan selecteren op class-name heb je 
+                eerder al geleerd. Hieronder een klein voorbeeldje:
+                <pre>
+                    <code>
+                        //Eerst maken we een variabele aan (die niet kan veranderen) met het door mij gewenste element.
+                        const myElement = document.querySelector('.my-class');
+                        
+                        //Controleer of het element bestaat
+                        if (myElement) { 
+                            //Voeg een eventhandler toe (addEventListener) die reageert op een click.
+                            myElement.addEventListener('click', function() {
+                                alert('Hello world');
+                            })
+                        }
+                    </code>
+                </pre>
+            </p>
+            <h3>Opdracht 1</h2>
+            <p class="normal-text">
+                Hieronder staat een button, zorg ervoor dat als je op de button klikt er een popup verschijnt die jouw naam
+                vraagt. Vervolgens toon je de gekozen naam in de console.log.
+            </p>
+            <p class="normal-text">
+                Je hebt hier een aantal van je tot nu toe geleerde skills voor nodig, om je op weg te helpen:
+                <ul>
+                    <li>Maken van een variabele</li>
+                    <li>Opvangen van de waarde van de prompt popupbox in de variabele</li>
+                    <li>Zoeken naar het door jouw gekozen element via een query-selector</li>
+                    <li>Aanmaken van een event handler op een element</li>
+                    <li>Afvangen van de click op het element</li>
+                    <ul>
+                        <li><h4>Advanced</h4></li>
+                        <li>Er is nu geen hover effect op mijn button (ik zie geen cursor aanwijzer)</li>
+                        <li>Bouw met Javascript een oplossing dat deze er wel op komst</li>
+                        <li>Denk eraan - classname oplossing gaat boven een style attribute!</li>
+                    </ul>
+                    <ul>
+                        <li><h4>Expert</h4></li>
+                        <li>Het kan soms gebeuren dat bovenstaande uitgevoerd wordt voor alle HTML ingeladen is</li>
+                        <li>Iets met asynchroon inladen, hebben we het later over</li>
+                        <li>Met welk browser evenement kan je dit oplossen?</li>
+                    </ul>
+                </ul>
+            </p>
+            <h3>De button</h3>
+            <p class="normal-text">
+                <button class="my-first-button">Klik mij :-)</button>
+            </p>
+        </section>
+        <footer class="footer" id="final">
+            <section>
+                <a href="page_4.html">&lt; Vorige opdracht</a> 
+                ||
+                <a class="not-allowed">Volgende opdracht &gt;</a>
+            </section>
+        </footer>   
+    </main>
+    <!-- Hieronder wordt het Javascript bestand ingeladen. Dit doe je bij voorkeur altijd aan het einde van je pagina -->
+    <script src="js/page_5.js"></script>
+</body>
+</html>
