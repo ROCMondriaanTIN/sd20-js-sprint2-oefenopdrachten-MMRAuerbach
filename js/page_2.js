@@ -4,17 +4,46 @@
 console.log(start);
 
 //Omdat het een  NODE is op je pagina kan je er ook doorheen lopen.
+console.log("1 start start id");
 let i = 0;
 while (i < start.childNodes.length) {
     console.log(start.childNodes[i]);
     i++;
 } 
 
-//Opdracht A1 - Advanced - Maak van de while-loop een for-loop. 
+console.log("1 start between id");
+i = 0;
+while (i < between.childNodes.length) {
+    console.log(between.childNodes[i]);
+    i++;
+} 
 
-//Opdracht 1 - Er zijn nog twee ID/ idents op de pagina, loop daar ook eens doorheen
+console.log("1 start final id");
+i = 0;
+while (i < final.childNodes.length) {
+    console.log(final.childNodes[i]);
+    i++;
+} 
 
-//Opdracht 2 - Loop ook eens door de hele <body> en <head> onderdelen heen.
+console.log("2 start HEAD elemend id");
+i = 0;
+while (i < document.head.childNodes.length) {
+    console.log(final.childNodes[i]);
+    i++;
+} 
+
+console.log("2 start BODY elemend id");
+i = 0;
+while (i < document.body.childNodes.length) {
+    console.log(final.childNodes[i]);
+    i++;
+} 
+
+console.log("1A if statement");
+for (let k = 0; k < start.childNodes.length; k++) {
+    console.log(start.childNodes[k]);
+} 
+
 
 
 
